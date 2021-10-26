@@ -1,0 +1,93 @@
+
+
+.container-section-calendar{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(105, 105, 105);
+    background-image: url(../img/BackGroundHeader.jpg);
+    background-size: cover;
+    background-position: center;
+
+    padding: 5%;
+    margin-top: 5%;
+
+    
+}
+
+.container-section-calendar h1{
+
+    font-size: 4em;
+    float:top;
+}
+
+.section-calendar-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info-calendar{
+    flex: 1 0 auto;
+
+    border: solid 2px rgb(0, 0, 0);
+    background-color: rgba(36, 36, 36, 0.8);
+    border-radius: 1%;
+    padding: 2em;
+    height: 22rem;
+    text-align: center;
+    width: 500px;
+    min-width: 21%;
+
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1.2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    -webkit-box-shadow: 0px 14px 43px -21px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 14px 43px -21px rgba(0,0,0,1);
+    box-shadow: 0px 14px 43px -21px rgba(0,0,0,1);
+
+    transition: all 0.2s;
+}
+
+.info-calendar:nth-child(2){
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.info-calendar:hover{
+    transform: scale(1.06);
+}
+
+.info-calendar h2{
+    font-size: 3em;
+}
+
+.info-calendar-meet{
+    border: 3px solid var(--linear-color-meeting);
+}
+
+.info-calendar-tourney{
+    border: 3px solid rgb(252, 0, 0);
+}
+
+@media only screen and  (max-width:1885px){
+    .container-section-calendar h1{
+        margin: 0 0 2% 0;
+    }
+}
+
+@media only screen and (min-width:1207px) and  (max-width:1885px){
+    .info-calendar{
+        width: 300px;
+    }
+}

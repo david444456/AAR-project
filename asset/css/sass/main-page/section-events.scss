@@ -1,0 +1,240 @@
+$width-video: 600px;
+$width-box-meeting-placs: 92%;
+
+.last-events-screen{
+    width: 80%;
+    margin: 100px 10% ;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.last-events{
+    width: $width-video;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.last-events h2{
+    width: $width-video;
+
+    margin-top: 1rem;
+    padding-bottom: 1%;
+
+    text-align: center;
+    font-size: 2.8em;
+    font-style: normal;
+    font-family: 'Permanent Marker', cursive;
+
+    // box-shadow: 0 1px 0 rgba(34, 30, 30, 0.2);
+}
+
+.last-events h3{
+    width: $width-video;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    text-align: center;
+    font-size: 1.8em;
+    font-style: normal;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.last-events-video{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.last-events-video p{
+    width: $width-video;
+
+    margin-top: 1rem;
+
+    font-size: 1.2em;
+    font-style: normal;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.btn-last-events{
+    margin-top: 50px;
+    
+    align-self: flex-start;
+}
+
+.last-events-video a{
+    width: 80%;
+    background-color: var(--color-blue);
+
+    padding: 1rem;
+
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 2.3em;
+    font-family: 'Anton', sans-serif;
+
+    transition: all 0.5s;
+
+    &:hover{
+        background-color: var(--main-color-background-green);
+        color: white;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 1.3em;
+        width: 60%;
+    }
+}
+
+.events-video{
+    width: 100%;
+    height: 300px;
+
+    background-color: aqua;
+
+}
+
+// meet section
+
+.box-dimentions{
+    border: 1px solid rgba($color: black, $alpha: 0.2);
+    border-radius: 15px;
+}
+
+.meeting-places{
+    width: 600px;
+    background-color: var(--color-blue);
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    box-shadow: 1px 0px 20px 2px;
+}
+
+.meeting-places h2{
+
+    margin: 3% 0;
+    padding: 5px 0 0 0;
+
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box-places{
+    width: $width-box-meeting-placs;
+    padding: 20px 50px;
+    margin: 1%;
+
+    position: relative;
+
+    @extend .box-dimentions;
+
+    h3{
+        font-size: 2em;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    p{
+        width: 60%;
+        padding: 10px 0;
+
+        font-size: 0.9em;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+}
+
+.box-places a{
+    text-decoration: none;
+
+    transition: all 2s;
+}
+
+.btn-box-places{
+    width: 50%;
+    background-color: #001b5e;
+    border-radius: 8px;
+
+    transition: all 0.5s;
+
+    h4{
+        padding: 5px 0 ;
+
+        text-align: center;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: white;
+    }
+
+    &:hover{
+        background-color: #95aae088;
+    }
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-whats{
+    font-size: 1.5em;
+    color: white;
+}
+
+.image-meeting-places{
+    right: 25px;
+    // top: calc(50% - 50px);
+    bottom: 25px;
+    width: 130px;
+    height: 90px;
+    position: absolute;
+
+    border: 2px white solid;
+    // border-radius: 28px 71px  34px 69px;
+
+    background-image: url(/asset/img/about-img.jpg);
+    background-size: cover;
+    background-color: #005e1f;
+}
+
+.box-places:nth-child(odd){
+    .image-meeting-places{
+        border-radius: 71px 34px 69px 28px;
+    }
+}
+
+.box-places:nth-child(even){
+    .image-meeting-places{
+        border-radius: 28px 71px  34px 69px;
+    }
+}
+
+.btn-show-more{
+    @extend .box-dimentions;
+    
+    padding: 10px;
+    margin: 5px 0;
+
+}
+
+.meeting-places a{
+    margin-bottom: 10px;
+    width: $width-box-meeting-placs;
+
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+

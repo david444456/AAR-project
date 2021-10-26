@@ -1,0 +1,35 @@
+$color-whiteblue: rgba(4, 144, 168, 0.6);
+:root{
+    --mainly-botton-color: rgba(224, 224, 224, 0.3);
+    --mainly-botton-color-hover: rgb(255, 255, 255);
+    --main-color-background-green: #0c701a;
+    --linear-color-meeting: rgb(3, 131, 103);
+    --screen-x: 1800px;
+    
+}
+
+// main page
+@import "sass/main-page/about-roundnet.scss";
+@import "sass/main-page/main.scss";
+@import "sass/main-page/header-menu.scss";
+@import "sass/main-page/section-calendar.scss";
+@import "sass/main-page/section-events.scss";
+@import "sass/main-page/section-news.scss";
+
+// about us section
+
+body{
+    position: relative;
+    padding-bottom: 2rem;
+    min-height: 100vh;
+}
+
+footer{
+    background-color: rgba(4, 144, 168, 0.6);
+    text-align: center;
+
+    width: 100%;
+
+    bottom: 0;
+    position: absolute;
+}
