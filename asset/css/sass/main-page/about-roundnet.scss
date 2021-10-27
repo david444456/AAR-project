@@ -18,10 +18,8 @@
 //new about
 .info-roundnet{
 
-    margin: 150px 0 50px;
-
+    margin: 25px 0 50px;
     max-width: 100vw;
-
     width: 100vw;
 
     display: flex;
@@ -29,7 +27,11 @@
     align-items: center;
     flex-direction: column;
 
+    
     @media only screen and (min-width:1200px) {
+
+        margin: 150px 0 50px;
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 3fr;
@@ -45,12 +47,12 @@
 
     // border: white solid 0.2px;
     padding: 1rem;
-    margin: 6rem 0 1em;
+    margin: 0 0 1em;
 
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 3.3em;
+    font-size: 1.7em;
     font-family: 'Anton', sans-serif;
 
 
@@ -62,6 +64,7 @@
     @media only screen and (min-width: 1200px) {
         font-size: 2.3em;
         width: 30%;
+        margin: 6rem 0 1em;
     }
 }
 
@@ -126,11 +129,14 @@
 }
 
 .box-info-roundnet h2{
-    font-size: 5.5em;
+    font-size: 2.5em;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color: var(--color-blue);
 
+    @media only screen and (min-width: 500px) {
+
+    }
     @media only screen and (min-width:1200px) {
         font-size: 3.5em;
     }
@@ -156,5 +162,13 @@
         display: inline;
         width: 500px;
         height: 300px;
+    }
+}
+
+.about-arr-description{
+    margin-top: 25px;
+
+    @media only screen and (min-width:1200px) {
+        margin-top: 0;
     }
 }

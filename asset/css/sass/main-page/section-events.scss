@@ -3,12 +3,15 @@ $width-box-meeting-placs: 92%;
 
 .last-events-screen{
     width: 100%;
-    margin: 100px 0 ;
+    margin: 50px 0 ;
 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 
+    @media only screen and (min-width:500px){
+        margin: 100px 0 ;
+    }
     @media only screen and (min-width:1200px){
         width: 80%;
         margin: 100px 10% ;
@@ -35,7 +38,7 @@ $width-box-meeting-placs: 92%;
     padding-bottom: 1%;
 
     text-align: center;
-    font-size: 5.8em;
+    font-size: 3.8em;
     font-style: normal;
     font-family: 'Permanent Marker', cursive;
 
@@ -52,10 +55,13 @@ $width-box-meeting-placs: 92%;
     margin-bottom: 1rem;
 
     text-align: center;
-    font-size: 2.7em;
+    font-size: 1.7em;
     font-style: normal;
     font-family: 'Bebas Neue', cursive;
 
+    @media only screen and (min-width: 500px) {
+        font-size: 2.0em;
+    }
     @media only screen and (min-width:1200px) {
         width: $width-video;
         font-size: 1.8em;
@@ -77,10 +83,13 @@ $width-box-meeting-placs: 92%;
 
     margin-top: 1rem;
 
-    font-size: 2.2em;
+    font-size: 1.6em;
     font-style: normal;
     font-family: 'Zen Kurenaido', sans-serif;
 
+    @media only screen and (min-width:650px) {
+        font-size: 2.2em;
+    }
     @media only screen and (min-width:1200px) {
         width: $width-video;
         font-size: 1.8em;
@@ -96,7 +105,7 @@ $width-box-meeting-placs: 92%;
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 3.3em;
+    font-size: 2em;
     font-family: 'Anton', sans-serif;
 
     transition: all 0.5s;
@@ -106,6 +115,9 @@ $width-box-meeting-placs: 92%;
         color: white;
     }
 
+    @media only screen and (min-width: 650px) {
+        font-size: 2.3em;
+    }
     @media only screen and (min-width: 1200px) {
         font-size: 1.3em;
         width: 60%;
@@ -116,9 +128,13 @@ $width-box-meeting-placs: 92%;
 
 .events-video{
     width: 100%;
-    height: 500px;
+    height: 230px;
 
     background-color: aqua;
+
+    @media only screen and (min-width:650px) {
+        height: 500px;
+    }
 
     @media only screen and (min-width:1200px) {
         width: 100%;
@@ -137,7 +153,7 @@ $width-box-meeting-placs: 92%;
     width: 95vw;
     background-color: var(--color-blue);
 
-    margin-top: 120px;
+    margin-top: 60px;
 
     display: flex;
     justify-content: space-around;
@@ -146,6 +162,9 @@ $width-box-meeting-placs: 92%;
 
     box-shadow: 1px 0px 20px 2px;
 
+    @media only screen and (min-width:500px){
+        margin-top: 120px;
+    }
     @media only screen and (min-width:1200px){
         margin-top: 0;
         width: 600px;
@@ -158,9 +177,12 @@ $width-box-meeting-placs: 92%;
     padding: 5px 0 0 0;
 
     text-align: center;
-    font-size: 4em;
+    font-size: 1.6em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+    @media only screen and (min-width:1200px) {
+
+    }
     @media only screen and (min-width:1200px) {
         width: 80%;
 
@@ -170,7 +192,7 @@ $width-box-meeting-placs: 92%;
 
 .box-places{
     width: $width-box-meeting-placs;
-    padding: 2% 50px;
+    padding: 2% 5%;
     margin: 1%;
 
     position: relative;
@@ -178,7 +200,7 @@ $width-box-meeting-placs: 92%;
     @extend .box-dimentions;
 
     h3{
-        font-size: 3em;
+        font-size: 1.5em;
         font-family:Arial, Helvetica, sans-serif;
     }
 
@@ -186,10 +208,22 @@ $width-box-meeting-placs: 92%;
         width: 60%;
         padding: 10px 0;
 
-        font-size: 1.7em;
+        font-size: 0.6em;
         font-family:Arial, Helvetica, sans-serif;
     }
 
+    @media only screen and (min-width:500px){
+        h3{
+            font-size: 2em;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            width: 70%;
+            font-size: 0.8em;
+            padding: 10px 0;
+        }    
+    }
     @media only screen and (min-width:1200px){
         padding: 20px 50px;
 
@@ -215,8 +249,8 @@ $width-box-meeting-placs: 92%;
 }
 
 .btn-box-places{
-    width: 60%;
-    height: 80px;
+    width: 50%;
+    height: 30px;
     background-color: #001b5e;
     border-radius: 8px;
     transition: all 0.5s;
@@ -225,7 +259,7 @@ $width-box-meeting-placs: 92%;
         padding: 5px 0 ;
 
         text-align: center;
-        font-size: 2.5em;
+        font-size: 1em;
         text-decoration: none;
         color: white;
     }
@@ -238,6 +272,13 @@ $width-box-meeting-placs: 92%;
     justify-content: space-around;
     align-items: center;
 
+    @media only screen and (min-width:500px){
+        width: 60%;
+        height: 60px;
+        h4{
+            font-size: 1em;
+        }
+    }
     @media only screen and (min-width:1200px){
         width: 50%;
         height: auto;
@@ -249,20 +290,22 @@ $width-box-meeting-placs: 92%;
 }
 
 .icon-whats{
-    font-size: 2.5em;
+    font-size: 1em;
     color: white;
-
+    @media only screen and (min-width:650px){
+        font-size: 1.1em;
+    }
     @media only screen and (min-width:1200px){
         font-size: 1.5em;
     }
 }
 
 .image-meeting-places{
-    right: 25px;
-    // top: calc(50% - 50px);
+    right: 10px;
+    top: 45%;
     bottom: 25px;
-    width: 230px;
-    height: 150px;
+    width: 100px;
+    height: 60px;
     position: absolute;
 
     border: 2px white solid;
@@ -272,9 +315,19 @@ $width-box-meeting-placs: 92%;
     background-size: cover;
     background-color: #005e1f;
 
+    @media only screen and (min-width:650px){
+        width: 150px;
+        height: 100px;
+
+        top: auto;
+    }
     @media only screen and (min-width:1200px) {
         width: 130px;
         height: 90px;
+
+        
+        top: auto;
+        right: 25px;
     }
 }
 
