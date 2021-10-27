@@ -15,152 +15,6 @@
     position: relative;
 }
 
-.about-roundnet{
-    // width: 65%;
-    width: 100%;
-    min-height: 400px;
-    height: 100%;
-
-    position: relative;
-
-    margin-top: 5%;
-
-
-    display: flex;
-    justify-content: center;
-
-    @media only screen and (min-width: 1200px) {
-        margin-left: 15%;
-        margin-right: 15%;
-            width: 65%;
-    }
-}
-
-.about-image{
-    padding-top: 3%;
-    padding-bottom: 3%;
-    display: none;
-    // width: 80%;
-    width: 100%;
-    height: 100%;
-
-    
-    @media only screen and (min-width: 1200px) {
-        display: block;
-    }
-}
-
-.about-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.about-roundnet-info{
-// position and dimentions
-    top: 0;
-    right: 0;
-    min-width: 30vw;
-    width: auto;
-    min-height: 60vh;
-    height: 100%;
-
-    padding: 5% 5% 2% 5%;
-    margin: 0 5%;
-    background-size: cover;
-    background-position: center;
-
-    // borders
-    border-radius: 45px;
-
-    // view
-    background-color: var(--main-color-background-green);
-    color: white;
-
-    // children
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    @media only screen and (min-width: 300px) and (max-width: 900px){
-        top: 50%;
-    }
-    @media only screen and (min-width: 1200px) {
-        position: absolute;
-        width: 30vw;
-        margin: 0 0;
-
-        min-height: 30vh;
-        height: 70%;
-    }
-}
-
-.about-roundnet-info h2{
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-    font-size: 5.5em;
-    letter-spacing: 0.05em;
-    margin-bottom: 5%;
-    font-weight: bolder;
-
-    @media only screen and (min-width: 1200px) {
-        font-size: 3.5em;
-    }
-}
-
-.about-roundnet-info h3{
-    text-align: center;
-    font-size: 3.5em;
-
-    text-decoration: none;
-    margin-bottom: 1.1rem;
-    color: var(--color-words);
-
-    @media only screen and (min-width: 1200px) {
-        font-size: 1.5em;
-    }
-}
-
-.about-roundnet-info p{
-    align-self: center;
-    max-width: 800px;
-    text-align: center;
-    font-size: 2.15em;
-
-    @media only screen and (min-width: 1200px) {
-        font-size: 1.15em;
-    }
-}
-
-.about-roundnet-info a{
-    align-self: center;
-    justify-self: center;
-    width: 80%;
-    background-color: var(--color-blue);
-
-    // border: white solid 0.2px;
-    padding: 1rem;
-    margin-top: 2rem;
-
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size: 2.3em;
-    font-family: 'Anton', sans-serif;
-
-    transition: all 0.5s;
-
-    @media only screen and (min-width: 1200px) {
-        font-size: 1.3em;
-        width: 60%;
-    }
-}
-
-.about-roundnet-info a:hover{
-    background-color: rgb(255, 255, 255);
-    color: var(--main-color-background-green);
-}
-
 //new about
 .info-roundnet{
 
@@ -187,8 +41,7 @@
 }
 
 .about-roundnet-screen a{
-    width: 20%;
-    background-color: var(--color-blue);
+    width: 60%;
 
     // border: white solid 0.2px;
     padding: 1rem;
@@ -199,6 +52,9 @@
     text-align: center;
     font-size: 3.3em;
     font-family: 'Anton', sans-serif;
+
+
+    background-color: var(--color-blue);
 
     z-index: 11;
     transition: all 0.5s;
@@ -217,13 +73,17 @@
     width: 4px;
     height: 93%;
 
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    display: none;
 
     background-color: #00000033;
 
     z-index: 10;
+
+    @media only screen and (min-width:1200px){
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
 }
 
 .line-screen-about .line-screen-about-children:nth-child(odd){
