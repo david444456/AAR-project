@@ -812,8 +812,8 @@ header {
   background-size: cover;
 }
 .image-meeting-places img {
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 60px;
   border: 2px white solid;
 }
 @media only screen and (min-width: 650px) {
@@ -822,6 +822,10 @@ header {
     height: 100px;
     top: auto;
   }
+  .image-meeting-places img {
+    width: 150px;
+    height: 100px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .image-meeting-places {
@@ -829,6 +833,10 @@ header {
     height: 90px;
     top: auto;
     right: 25px;
+  }
+  .image-meeting-places img {
+    width: 130px;
+    height: 90px;
   }
 }
 

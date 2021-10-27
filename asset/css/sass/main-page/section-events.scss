@@ -315,8 +315,8 @@ $width-box-meeting-placs: 92%;
     // background-color: #005e1f;
 
     img{
-        width: 100%;
-        height: 100%;
+        width: 100px;
+        height: 60px;
         border: 2px white solid;
     }
 
@@ -325,6 +325,10 @@ $width-box-meeting-placs: 92%;
         height: 100px;
 
         top: auto;
+        img{
+            width: 150px;
+        height: 100px;
+        }
     }
     @media only screen and (min-width:1200px) {
         width: 130px;
@@ -332,6 +336,11 @@ $width-box-meeting-placs: 92%;
 
         top: auto;
         right: 25px;
+
+        img{
+            width: 130px;
+            height: 90px;
+        }
     }
 }
 
