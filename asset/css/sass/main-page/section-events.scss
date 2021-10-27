@@ -314,12 +314,6 @@ $width-box-meeting-placs: 92%;
     background-size: cover;
     // background-color: #005e1f;
 
-    img{
-        width: 100px;
-        height: 60px;
-        border: 2px white solid;
-    }
-
     @media only screen and (min-width:650px){
         width: 150px;
         height: 100px;
@@ -342,6 +336,12 @@ $width-box-meeting-placs: 92%;
             height: 90px;
         }
     }
+}
+
+.image-meeting-places img{
+    width: 100px;
+    height: 60px;
+    border: 2px white solid;
 }
 
 .box-places:nth-child(odd){

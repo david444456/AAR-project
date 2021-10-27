@@ -811,11 +811,6 @@ header {
   position: absolute;
   background-size: cover;
 }
-.image-meeting-places img {
-  width: 100px;
-  height: 60px;
-  border: 2px white solid;
-}
 @media only screen and (min-width: 650px) {
   .image-meeting-places {
     width: 150px;
@@ -838,6 +833,12 @@ header {
     width: 130px;
     height: 90px;
   }
+}
+
+.image-meeting-places img {
+  width: 100px;
+  height: 60px;
+  border: 2px white solid;
 }
 
 .box-places:nth-child(odd) .image-meeting-places img {
