@@ -809,10 +809,12 @@ header {
   width: 100px;
   height: 60px;
   position: absolute;
-  border: 2px white solid;
-  background-image: url(/asset/img/about-img.jpg);
   background-size: cover;
-  background-color: #005e1f;
+}
+.image-meeting-places img {
+  width: 100%;
+  height: 100%;
+  border: 2px white solid;
 }
 @media only screen and (min-width: 650px) {
   .image-meeting-places {
@@ -830,11 +832,11 @@ header {
   }
 }
 
-.box-places:nth-child(odd) .image-meeting-places {
+.box-places:nth-child(odd) .image-meeting-places img {
   border-radius: 71px 34px 69px 28px;
 }
 
-.box-places:nth-child(even) .image-meeting-places {
+.box-places:nth-child(even) .image-meeting-places img {
   border-radius: 28px 71px 34px 69px;
 }
 

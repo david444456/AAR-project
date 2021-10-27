@@ -308,12 +308,17 @@ $width-box-meeting-placs: 92%;
     height: 60px;
     position: absolute;
 
-    border: 2px white solid;
+
     // border-radius: 28px 71px  34px 69px;
 
-    background-image: url(asset/img/about-img.jpg);
     background-size: cover;
-    background-color: #005e1f;
+    // background-color: #005e1f;
+
+    img{
+        width: 100%;
+        height: 100%;
+        border: 2px white solid;
+    }
 
     @media only screen and (min-width:650px){
         width: 150px;
@@ -325,20 +330,19 @@ $width-box-meeting-placs: 92%;
         width: 130px;
         height: 90px;
 
-        
         top: auto;
         right: 25px;
     }
 }
 
 .box-places:nth-child(odd){
-    .image-meeting-places{
+    .image-meeting-places img{
         border-radius: 71px 34px 69px 28px;
     }
 }
 
 .box-places:nth-child(even){
-    .image-meeting-places{
+    .image-meeting-places img{
         border-radius: 28px 71px  34px 69px;
     }
 }
