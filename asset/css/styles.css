@@ -219,20 +219,29 @@ html {
   font-size: 16px;
 }
 
-header {
-  min-height: 100px;
+@media only screen and (min-width: 1200px) {
+  header {
+    min-height: 100px;
+  }
 }
 
 .image-background-header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(246, 252, 245, 0.01)), to(rgba(255, 255, 255, 0))), url(../img/allaar.jpg);
   background-image: linear-gradient(to bottom, rgba(246, 252, 245, 0.01), rgba(255, 255, 255, 0)), url(../img/allaar.jpg);
   /* background-image: url(../img/BackGroundHeader.jpg); */
-  background-size: 100%;
   background-position: center;
   background-attachment: unset;
   background-repeat: no-repeat;
-  height: calc(var(--screen-x) * 9 / 16);
-  min-height: 600px;
+  height: 100vh;
+  margin-top: -30px;
+}
+@media only screen and (min-width: 1200px) {
+  .image-background-header {
+    height: calc(var(--screen-x) * 9 / 16);
+    min-height: 600px;
+    background-size: 100%;
+    margin-top: 0;
+  }
 }
 
 /*menu*/
@@ -241,13 +250,20 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   min-height: 5px;
+}
+@media only screen and (min-width: 1200px) {
+  .section-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .image-header img {
@@ -260,6 +276,11 @@ header {
 
 .section-menu-menu {
   width: 60%;
+}
+@media only screen and (min-width: 1200px) {
+  .section-menu-menu {
+    width: 60%;
+  }
 }
 
 .menu {
@@ -456,11 +477,24 @@ header {
 }
 
 .info-calendar h2 {
-  font-size: 3em;
+  font-size: 2em;
+}
+@media only screen and (min-width: 500px) {
+  .info-calendar h2 {
+    font-size: 3em;
+  }
 }
 
 .info-calendar-meet {
   border: 3px solid var(--linear-color-meeting);
+}
+.info-calendar-meet h2 {
+  font-size: 2em;
+}
+@media only screen and (min-width: 500px) {
+  .info-calendar-meet h2 {
+    font-size: 2em;
+  }
 }
 
 .info-calendar-tourney {
