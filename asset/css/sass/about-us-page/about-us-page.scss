@@ -1,0 +1,118 @@
+$font-size-h: 4.5em;
+
+.first-part-main-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100vw;
+
+    h1{
+        margin: 15px 8px;
+        font-size: 4.2em;
+        font-family: "Times New Roman", Times, serif;
+        color: var(--color-blue);
+
+        justify-self: flex-start;
+        align-self: flex-start;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        margin: 0 12vw;
+        width: 75vw;
+
+        h1{
+            margin: 65px 8px;
+
+            font-size: $font-size-h;
+            align-self: flex-start;
+        }
+    }
+}
+
+.main-info-aar{
+    text-decoration: none;
+    margin: 0 3px;
+}
+
+.box-vision,
+.box-about-roundnet{
+    h2{
+        font-size: 2.8em;
+        font-family: "Times New Roman", Times, serif;
+        color: var(--color-blue);
+
+        margin: 5px 0;
+    }
+    p{
+        font-size: 1.4em;
+        font-family: "Times New Roman", Times, serif;
+        color: var(--color-blue);
+    }
+
+    @media only screen and (min-width: 1200px) {
+        h2{
+            font-size: $font-size-h;    
+            margin: 50px 0 0;
+        }
+        p{
+            font-size: 1.9em;
+        }
+    }
+}
+
+.box-about-roundnet{
+    margin-top: 30px;
+}
+
+.we-arr-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media only screen and (min-width: 1200px) {
+        margin: 0 50px;
+    }
+}
+
+.box-info-us-person{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.box-info-us-person img {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    @media only screen and (min-width: 1200px) {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+.box-info-us-person-text{
+    margin: 0 0 0 15px;
+
+    h3{
+        font-size: 1.9em;
+        font-family: 'Bebas Neue', cursive;
+    }
+    h5{
+        font-size: 0.9em;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        h3{
+            font-size: 3.2em;
+        }
+        h5{
+            font-size: 1.3em;
+        }
+    }
+}

@@ -58,27 +58,38 @@ header {
 }
 
 .menu{
-    flex: 5 1 auto;
 
-    float: right;
+
     width: 70%;
     height: 10%;
+
     padding-left: 0;
+
     list-style: none;
     margin-top: 5px;
     margin-right: 5px;
     margin-bottom: 0;
+    border-radius: 15px 15px 15px 15px;
+    
+    flex: 5 1 auto;
+    float: right;
     display: flex;
     justify-content: flex-end;
-    background: var(--mainly-botton-color);
 
-    border-radius: 15px 15px 15px 15px;
+    background: var(--mainly-botton-color);
 }
 
 .menu li{
     flex: auto;
     text-align: center;
 
+    a{
+        font-size: 1em;
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 1.3em;
+        }
+    }
 }
 
 .menu a{
@@ -100,7 +111,7 @@ header {
     background: rgb(44, 125, 150);
     line-height: 2;
     padding-left: 1mm;
-    font-size: 1.2em;
+    font-size: 1.9em;
     display: none;
 }
 
@@ -132,7 +143,7 @@ header {
     
     text-decoration: none;
     font-family: 'Bebas Neue', cursive;
-    font-size: 0.6cm;
+    font-size: 0.8cm;
 
     padding: 15px 80px;
     border: white solid 1px;

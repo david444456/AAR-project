@@ -284,10 +284,6 @@ html {
 }
 
 .menu {
-  -webkit-box-flex: 5;
-      -ms-flex: 5 1 auto;
-          flex: 5 1 auto;
-  float: right;
   width: 70%;
   height: 10%;
   padding-left: 0;
@@ -295,6 +291,11 @@ html {
   margin-top: 5px;
   margin-right: 5px;
   margin-bottom: 0;
+  border-radius: 15px 15px 15px 15px;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 auto;
+          flex: 5 1 auto;
+  float: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +303,6 @@ html {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background: var(--mainly-botton-color);
-  border-radius: 15px 15px 15px 15px;
 }
 
 .menu li {
@@ -310,6 +310,14 @@ html {
       -ms-flex: auto;
           flex: auto;
   text-align: center;
+}
+.menu li a {
+  font-size: 1em;
+}
+@media only screen and (min-width: 1200px) {
+  .menu li a {
+    font-size: 1.3em;
+  }
 }
 
 .menu a {
@@ -331,7 +339,7 @@ html {
   background: #2c7d96;
   line-height: 2;
   padding-left: 1mm;
-  font-size: 1.2em;
+  font-size: 1.9em;
   display: none;
 }
 
@@ -368,7 +376,7 @@ html {
 .btn-more-about a {
   text-decoration: none;
   font-family: "Bebas Neue", cursive;
-  font-size: 0.6cm;
+  font-size: 0.8cm;
   padding: 15px 80px;
   border: white solid 1px;
   background-color: rgba(4, 144, 168, 0.6);
@@ -1002,7 +1010,7 @@ html {
   margin: 25px 0;
   width: 99vw;
   height: 1px;
-  background-color: #00000033;
+  background-color: #0000005b;
 }
 @media only screen and (min-width: 1200px) {
   .line-screen {
@@ -1031,6 +1039,141 @@ html {
 
 .image-sponsors img {
   border-radius: 50%;
+}
+
+.first-part-main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+}
+.first-part-main-info h1 {
+  margin: 15px 8px;
+  font-size: 4.2em;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--color-blue);
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+@media only screen and (min-width: 1200px) {
+  .first-part-main-info {
+    margin: 0 12vw;
+    width: 75vw;
+  }
+  .first-part-main-info h1 {
+    margin: 65px 8px;
+    font-size: 4.5em;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+.main-info-aar {
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+.box-vision h2,
+.box-about-roundnet h2 {
+  font-size: 2.8em;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--color-blue);
+  margin: 5px 0;
+}
+.box-vision p,
+.box-about-roundnet p {
+  font-size: 1.4em;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--color-blue);
+}
+@media only screen and (min-width: 1200px) {
+  .box-vision h2,
+.box-about-roundnet h2 {
+    font-size: 4.5em;
+    margin: 50px 0 0;
+  }
+  .box-vision p,
+.box-about-roundnet p {
+    font-size: 1.9em;
+  }
+}
+
+.box-about-roundnet {
+  margin-top: 30px;
+}
+
+.we-arr-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media only screen and (min-width: 1200px) {
+  .we-arr-info {
+    margin: 0 50px;
+  }
+}
+
+.box-info-us-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+}
+
+.box-info-us-person img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+@media only screen and (min-width: 1200px) {
+  .box-info-us-person img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.box-info-us-person-text {
+  margin: 0 0 0 15px;
+}
+.box-info-us-person-text h3 {
+  font-size: 1.9em;
+  font-family: "Bebas Neue", cursive;
+}
+.box-info-us-person-text h5 {
+  font-size: 0.9em;
+}
+@media only screen and (min-width: 1200px) {
+  .box-info-us-person-text h3 {
+    font-size: 3.2em;
+  }
+  .box-info-us-person-text h5 {
+    font-size: 1.3em;
+  }
 }
 
 body {

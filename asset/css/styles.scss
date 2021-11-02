@@ -16,7 +16,9 @@ $color-whiteblue: rgba(4, 144, 168, 0.6);
 @import "sass/main-page/section-events.scss";
 @import "sass/main-page/section-news.scss";
 
+
 // about us section
+@import "sass/about-us-page/about-us-page.scss";
 
 body{
     position: relative;
