@@ -1,5 +1,5 @@
 #VideoBackground{
-    position: absolute;
+    // position: absolute;
     top: 120px;
     left: 0;
     width: 100%;
@@ -7,5 +7,167 @@
     object-fit: cover;
     opacity: 1;
     z-index: 9;
+}
+
+
+.section-info-roundnet{
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 75vw;
+    margin: 0 12.5%;
+
+    h2{
+        margin: 25px 0;
+        font-size: 4em;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--color-blue);
+    }
+
+    p{
+        font-size: 2em;
+        text-align: center;
+
+        width: 80%;
+
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--color-blue);
+    }
+}
+
+//first part of the page
+.box-info-sport{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 80px 0;
+}
+
+.what-is-sport{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h4{
+        margin: 25px 0;
+        font-size: 3em;
+        text-align: center;
+
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--color-blue);
+    }
+
+    
+}
+
+.where-we-play img,
+.box-info-sport img{
+    border-radius: 25px;
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    box-shadow: 5px 0px 25px;
+
+    @media only screen and (min-width:1200px) {
+        display: inline;
+        width: 500px;
+        height: 300px;
+    }
+}
+
+.video-explication-sport{
+    position: relative;
+    margin: 50px 0;
+
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    // height: 750px;
+}
+
+.video-explication-sport iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+// promotion image
+.image-promotion{
+    background-image: url(/asset/img/PromotionKit.png);
+    background-size: cover;
+    position: relative;
+    margin: 50px 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .button-promotion{
+        position: absolute;
+        top: 75%;
+        left: 6%;
+    }
+
+    @media screen and (min-width:1200px) {
+        height: 1300px;
+    }
+}
+
+// last part
+.where-we-play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 80px 0;
+
+    img{
+        margin: 0 50px 0 50px;
+    }
+}
+
+.box-where-play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 50%;
+
+    a{
+        align-self: flex-start;
+        border-radius: 15px;
+        padding: 15px;
+        margin: 15px 10px;
+
+        text-decoration: none;
+        font-size: 2em;
+        background-color: rgb(73, 214, 55);
+    }
+
+    p{
+        width: 100%;
+    }
+}
+
+.image-cover-top{
+    
+    object-position: top;
+    
 }
 
