@@ -1202,21 +1202,38 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 75vw;
-  margin: 0 12.5%;
+  width: 100vw;
+  margin: 0;
 }
 .section-info-roundnet h2 {
-  margin: 25px 0;
-  font-size: 4em;
+  margin: 10px;
+  width: 100vw;
+  font-size: 3em;
+  text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: var(--color-blue);
 }
 .section-info-roundnet p {
   font-size: 2em;
   text-align: center;
-  width: 80%;
+  width: 97vw;
+  margin: 0 0 10px;
   font-family: "Times New Roman", Times, serif;
   color: var(--color-blue);
+}
+@media only screen and (min-width: 1200px) {
+  .section-info-roundnet {
+    width: 75vw;
+    margin: 0 12.5%;
+  }
+  .section-info-roundnet h2 {
+    font-size: 4em;
+    margin: 25px 0;
+  }
+  .section-info-roundnet p {
+    width: 80%;
+    margin: 0;
+  }
 }
 
 .box-info-sport {
@@ -1229,8 +1246,15 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
-  margin: 80px 0;
+  margin: 0 0 10px 0;
+}
+@media only screen and (min-width: 1200px) {
+  .box-info-sport {
+    margin: 80px 0;
+  }
 }
 
 .what-is-sport {
@@ -1250,10 +1274,18 @@ html {
 }
 .what-is-sport h4 {
   margin: 25px 0;
-  font-size: 3em;
+  font-size: 2.6em;
   text-align: center;
+  width: 100vw;
   font-family: "Times New Roman", Times, serif;
   color: var(--color-blue);
+}
+@media only screen and (min-width: 1200px) {
+  .what-is-sport h4 {
+    margin: 25px 0;
+    font-size: 3em;
+    width: auto;
+  }
 }
 
 .where-we-play img,
@@ -1261,8 +1293,8 @@ html {
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   -webkit-box-shadow: 5px 0px 25px;
           box-shadow: 5px 0px 25px;
 }
@@ -1277,10 +1309,15 @@ html {
 
 .video-explication-sport {
   position: relative;
-  margin: 50px 0;
+  margin: 10px 5px;
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
+}
+@media only screen and (min-width: 1200px) {
+  .video-explication-sport {
+    margin: 52px 0;
+  }
 }
 
 .video-explication-sport iframe {
@@ -1322,11 +1359,24 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
-  margin: 80px 0;
+  margin: 0 0 35px;
 }
 .where-we-play img {
   margin: 0 50px 0 50px;
+}
+.where-we-play .display-none-mobile {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .where-we-play {
+    margin: 80px 0;
+  }
+  .where-we-play .display-none-mobile {
+    display: block;
+  }
 }
 
 .box-where-play {
@@ -1343,7 +1393,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 100%;
 }
 .box-where-play a {
   -ms-flex-item-align: start;
@@ -1357,6 +1407,15 @@ html {
 }
 .box-where-play p {
   width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  .box-where-play {
+    width: 50%;
+  }
+  .box-where-play p {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .image-cover-top {
