@@ -20,6 +20,9 @@ $color-whiteblue: rgba(4, 144, 168, 0.6);
 // about us section
 @import "sass/about-us-page/about-us-page.scss";
 
+// sport  section
+@import "sass/sport-section/main-sport-section.scss";
+
 body{
     position: relative;
     padding-bottom: 2rem;

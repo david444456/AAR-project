@@ -1176,6 +1176,18 @@ html {
   }
 }
 
+#VideoBackground {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1;
+  z-index: 9;
+}
+
 body {
   position: relative;
   padding-bottom: 2rem;
