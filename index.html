@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>ARR - Asociación Argentina de Roundnet</title>
 
     <link rel=icon href="asset/img/iconByPage.png" sizes="32x32" type="image/png">
@@ -24,16 +25,12 @@
     <link rel="stylesheet"  href="asset/fontawesome/css/all.min.css">
 
     <!-- js -->
-    <script src="/asset/js/jquery-3.6.0.js"></script>
-    <script src="/asset/js/script-header.js"></script>
-    <script src="/asset/js/main.js"></script>
-
-
+    <script src="asset/js/scrollreveal.js"></script>
 
 </head>
 <body>
     <header>
-        <div class="section-menu">
+        <div class="section-menu anim-up">
             <div class="image-header">
                 <img src="asset/img/iconByPage.png" alt="">
             </div>
@@ -41,7 +38,8 @@
                 <nav>
                     <h2 class="toggle-menu">Menu</h2> 
                     <ul class="menu">
-                        <li><a href="#">¿Quiénes somos?</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="/asset/html/about-us.html">¿Quiénes somos?</a></li>
                         <li><a href="#">¿Qué es ROUNDNET?</a></li>
                         <li><a href="#">Galería</a></li>
                         <li><a href="#">Contacto</a></li>
@@ -50,12 +48,12 @@
             </div>
         </div>
         <div class="image-background-header">
-            <div class="more-about">
+            <div class="more-about anim-up">
                 <div class="text-more">
                     <h2>ARR</h2>
                 </div>
                 <div class="btn-more-about">
-                    <a href="">SABER MÁS</a>
+                    <a href="/asset/html/about-us.html">SABER MÁS</a>
                 </div>
             </div>
         </div>
@@ -65,28 +63,28 @@
     <!-- section about -->
     <section class="about-roundnet-screen">
         <div class="info-roundnet">
-            <div class="box-info-roundnet">
+            <div class="box-info-roundnet anim-up">
                 <h2>ROUNDNET: UN DEPORTE PARA TODA LA FAMILIA</h2>
             </div>
-            <div class="box-info-roundnet box-info-image">
-                <img src="/asset/img/playRoundnet.JPG" alt="">
+            <div class="box-info-roundnet box-info-image anim-up">
+                <img src="asset/img/playRoundnet.JPG" alt="">
             </div>
-            <div class="box-info-roundnet box-info-image">
-                <img src="/asset/img/about-img.jpg" alt="">
+            <div class="box-info-roundnet box-info-image anim-up">
+                <img src="asset/img/about-img.jpg" alt="">
             </div>
-            <div class="box-info-roundnet">
+            <div class="box-info-roundnet anim-up">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse nobis neque perferendis at 
                     eius officia, mollitia obcaecati.
                      Tempore voluptas temporibus veritatis aspernatur, 
                      doloribus rem quos iure, odit non tempora quam.</p>
             </div>
-            <div class="box-info-roundnet">
+            <div class="box-info-roundnet anim-up">
                 <h2 class="about-aar-title">¿Qué es AAR?</h2>
                 <p class="about-arr-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Tenetur minima exercitationem ea perspiciatis unde consequatur odit? Inventore ipsum</p>
             </div>
-            <div class="box-info-roundnet box-info-image">
-                <img src="/asset/img/playRoundnet2.jpg" alt="">
+            <div class="box-info-roundnet box-info-image anim-up">
+                <img src="asset/img/playRoundnet2.jpg" alt="">
             </div>
         </div>
         <div class="line-screen-about">
@@ -94,7 +92,7 @@
             <div class="line-screen-about-children"></div>
             <div class="line-screen-about-children"></div>
         </div>
-        <a href="#">SABER MÁS</a>
+        <a class="anim-up" href="#">SABER MÁS</a>
 
         <!-- <div class="about-roundnet">
             <div class="about-image">
@@ -118,7 +116,7 @@
         <div class="container-section-calendar">
             <h1>Calendario</h1>
             <div class="section-calendar-info">
-                <div class="info-calendar">
+                <div class="info-calendar ">
                     <div class="info-calendar-meet"><h2>Encuentro</h2></div>
                     <div><h3>18.09.2021 - 16/18 hs</h2></div>
                     <div>
@@ -171,9 +169,9 @@
                     <p>En un partido emocionante "los nenes malos" se llevaron
                         la victoria frente a PF y se llevaron su primer torneo.
                     </p>
-                    <div class="btn-last-events">
+
                         <a href="#">VER MÁS</a>
-                    </div>
+                    
                 </div>
             </div>
 
@@ -193,7 +191,9 @@
                             </span>
                         </div>
                     </a>
-                    <div class="image-meeting-places"></div>
+                    <div class="image-meeting-places">
+                        <img src="asset/img/allaar.jpg" alt="">
+                    </div>
                 </div>
 
                 <div class="box-places">
@@ -209,7 +209,9 @@
                             </div>
                         </div>
                     </a>
-                    <div class="image-meeting-places"></div>
+                    <div class="image-meeting-places">
+                        <img src="asset/img/playRoundnet2.jpg" alt="">
+                    </div>
                 </div>
 
                 <div class="box-places">
@@ -225,7 +227,9 @@
                             </div>
                         </div>
                     </a>
-                    <div class="image-meeting-places"></div>
+                    <div class="image-meeting-places">
+                        <img src="asset/img/about-img.jpg" alt="">
+                    </div>
                 </div>
 
                 <a href="#">
@@ -243,21 +247,21 @@
         <!-- news -->
         <h1 class ="title-news">Noticias</h1>
         <div class="section-news">
-            <div class="box-news">
+            <div class="box-news anim-up">
                 <img src="asset/img/win_goldCup.JPG" alt="GoldCup">
                 <a href="#">
                     <h3>"Los nenes malos" son los ganadores del último torneo!</h3>
                 </a>
             </div>
 
-            <div class="box-news">
+            <div class="box-news anim-up">
                 <img src="asset/img/win_silverCup.JPG" alt="silverCup" >
                 <a href="#">
                 <h3>"X" son los ganadores de la copa de plata</h3>
             </a>
             </div>
 
-            <div class="box-news">
+            <div class="box-news anim-up">
                 <img src="asset/img/win_goldCup.JPG" alt="Ciudad">
                 <a href="#">
                 <h3>Ciudad emergente: un dia de roundnet en la ciudad</h3>
@@ -270,15 +274,21 @@
 
         <!-- sponsors -->
         <h1 class="title-sponsors">Nos apoyan</h1>
-        <div class="image-sponsors">
-            <img src="asset/img/iconStrike360.png" alt="strike 360">
+        <div class="image-sponsors anim-up">
+            <a href="#">
+                <img src="asset/img/iconStrike360.png" alt="strike 360">
+            </a>
         </div>
     </section>
-
 
     <!-- footer -->
     <footer>
         <p class="header-text">Design by David Toranzo</p>
     </footer>
+    
+    <script src="asset/js/jquery-3.6.0.js"></script>
+    <script src="asset/js/script-header.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script src="asset/js/animations.js"></script>
 </body>
 </html>
