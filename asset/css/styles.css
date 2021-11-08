@@ -226,8 +226,8 @@ html {
 }
 
 .image-background-header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(246, 252, 245, 0.01)), to(rgba(255, 255, 255, 0))), url(../img/allaar.jpg);
-  background-image: linear-gradient(to bottom, rgba(246, 252, 245, 0.01), rgba(255, 255, 255, 0)), url(../img/allaar.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(246, 252, 245, 0.01)), to(rgba(255, 255, 255, 0))), url(../img/allaar.avif);
+  background-image: linear-gradient(to bottom, rgba(246, 252, 245, 0.01), rgba(255, 255, 255, 0)), url(../img/allaar.avif);
   /* background-image: url(../img/BackGroundHeader.jpg); */
   background-position: center;
   background-attachment: unset;
@@ -1338,7 +1338,7 @@ html {
 }
 
 .image-promotion {
-  background-image: url(/asset/img/KitBackGroundProduct.png);
+  background-image: url(/asset/img/KitBackGroundProduct.avif);
   background-size: cover;
   position: relative;
   margin: 10px 0;
