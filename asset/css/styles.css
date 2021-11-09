@@ -162,14 +162,14 @@
   }
 }
 
-.box-info-roundnet h2 {
+.box-info-roundnet h3 {
   font-size: 2.5em;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: var(--color-blue);
 }
 @media only screen and (min-width: 1200px) {
-  .box-info-roundnet h2 {
+  .box-info-roundnet h3 {
     font-size: 3.5em;
   }
 }
@@ -226,6 +226,19 @@ html {
 }
 
 .image-background-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(246, 252, 245, 0.01)), to(rgba(255, 255, 255, 0))), url(../img/allaar.avif);
   background-image: linear-gradient(to bottom, rgba(246, 252, 245, 0.01), rgba(255, 255, 255, 0)), url(../img/allaar.avif);
   /* background-image: url(../img/BackGroundHeader.jpg); */
@@ -235,12 +248,22 @@ html {
   height: 100vh;
   margin-top: -30px;
 }
+.image-background-header h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
 @media only screen and (min-width: 1200px) {
   .image-background-header {
     height: calc(var(--screen-x) * 9 / 16);
     min-height: 600px;
     background-size: 100%;
     margin-top: 0;
+  }
+  .image-background-header h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 6em;
   }
 }
 
@@ -345,7 +368,7 @@ html {
 
 /*images and info*/
 .more-about {
-  height: 70%;
+  height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,6 +383,11 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+}
+@media only screen and (min-width: 800px) {
+  .more-about {
+    height: 70%;
+  }
 }
 
 .text-more {
@@ -484,12 +512,21 @@ html {
           transform: scale(1.06);
 }
 
-.info-calendar h2 {
+.info-calendar h4 {
   font-size: 2em;
 }
 @media only screen and (min-width: 500px) {
-  .info-calendar h2 {
+  .info-calendar h4 {
     font-size: 3em;
+  }
+}
+
+.info-calendar h5 {
+  font-size: 1em;
+}
+@media only screen and (min-width: 500px) {
+  .info-calendar h5 {
+    font-size: 1.3em;
   }
 }
 
@@ -564,7 +601,7 @@ html {
   }
 }
 
-.last-events h2 {
+.last-events h4 {
   width: 100%;
   margin-top: 1rem;
   padding-bottom: 1%;
@@ -574,13 +611,13 @@ html {
   font-family: "Permanent Marker", cursive;
 }
 @media only screen and (min-width: 1200px) {
-  .last-events h2 {
+  .last-events h4 {
     width: 600px;
     font-size: 2.8em;
   }
 }
 
-.last-events h3 {
+.last-events h5 {
   width: 92%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -590,12 +627,12 @@ html {
   font-family: "Bebas Neue", cursive;
 }
 @media only screen and (min-width: 500px) {
-  .last-events h3 {
+  .last-events h5 {
     font-size: 2em;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .last-events h3 {
+  .last-events h5 {
     width: 600px;
     font-size: 1.8em;
   }
@@ -721,7 +758,7 @@ html {
   }
 }
 
-.meeting-places h2 {
+.meeting-places h4 {
   width: 90%;
   margin: 3% 0;
   padding: 5px 0 0 0;
@@ -730,7 +767,7 @@ html {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 @media only screen and (min-width: 1200px) {
-  .meeting-places h2 {
+  .meeting-places h4 {
     width: 80%;
     font-size: 2em;
   }
@@ -742,7 +779,7 @@ html {
   margin: 1%;
   position: relative;
 }
-.box-places h3 {
+.box-places h5 {
   font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -753,7 +790,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 @media only screen and (min-width: 500px) {
-  .box-places h3 {
+  .box-places h5 {
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -767,7 +804,7 @@ html {
   .box-places {
     padding: 20px 50px;
   }
-  .box-places h3 {
+  .box-places h5 {
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -800,7 +837,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
 }
-.btn-box-places h4 {
+.btn-box-places h6 {
   padding: 5px 0;
   text-align: center;
   font-size: 1em;
@@ -815,7 +852,7 @@ html {
     width: 60%;
     height: 60px;
   }
-  .btn-box-places h4 {
+  .btn-box-places h6 {
     font-size: 1em;
   }
 }
@@ -824,7 +861,7 @@ html {
     width: 50%;
     height: auto;
   }
-  .btn-box-places h4 {
+  .btn-box-places h6 {
     font-size: 1.5em;
   }
 }
@@ -902,6 +939,14 @@ html {
   text-decoration: none;
   color: black;
   text-align: center;
+}
+.meeting-places a h5 {
+  font-size: 1em;
+}
+@media only screen and (min-width: 1200px) {
+  .meeting-places a h5 {
+    font-size: 1.5em;
+  }
 }
 
 .title-news {
@@ -1057,8 +1102,8 @@ html {
           flex-direction: column;
   width: 100vw;
 }
-.first-part-main-info h1 {
-  margin: 15px 8px;
+.first-part-main-info h3 {
+  margin: 15px 0px;
   font-size: 4.2em;
   font-family: "Times New Roman", Times, serif;
   color: var(--color-blue);
@@ -1071,8 +1116,8 @@ html {
     margin: 0 12vw;
     width: 75vw;
   }
-  .first-part-main-info h1 {
-    margin: 65px 8px;
+  .first-part-main-info h3 {
+    margin: 19px 0px;
     font-size: 4.5em;
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -1084,8 +1129,8 @@ html {
   margin: 0 3px;
 }
 
-.box-vision h2,
-.box-about-roundnet h2 {
+.box-vision h3,
+.box-about-roundnet h3 {
   font-size: 2.8em;
   font-family: "Times New Roman", Times, serif;
   color: var(--color-blue);
@@ -1098,8 +1143,8 @@ html {
   color: var(--color-blue);
 }
 @media only screen and (min-width: 1200px) {
-  .box-vision h2,
-.box-about-roundnet h2 {
+  .box-vision h3,
+.box-about-roundnet h3 {
     font-size: 4.5em;
     margin: 50px 0 0;
   }
@@ -1160,7 +1205,7 @@ html {
 .box-info-us-person-text {
   margin: 0 0 0 15px;
 }
-.box-info-us-person-text h3 {
+.box-info-us-person-text h4 {
   font-size: 1.9em;
   font-family: "Bebas Neue", cursive;
 }
@@ -1168,11 +1213,20 @@ html {
   font-size: 0.9em;
 }
 @media only screen and (min-width: 1200px) {
-  .box-info-us-person-text h3 {
+  .box-info-us-person-text h4 {
     font-size: 3.2em;
   }
   .box-info-us-person-text h5 {
     font-size: 1.3em;
+  }
+}
+
+.image-sponsors h4 {
+  margin: 0 0 26px;
+}
+@media only screen and (min-width: 1200px) {
+  .image-sponsors h4 {
+    margin: 0 0 100px;
   }
 }
 
@@ -1205,7 +1259,9 @@ html {
   width: 100vw;
   margin: 0;
 }
-.section-info-roundnet h2 {
+.section-info-roundnet h1,
+.section-info-roundnet h2,
+.section-info-roundnet h4 {
   margin: 10px;
   width: 100vw;
   font-size: 3em;
@@ -1226,7 +1282,9 @@ html {
     width: 75vw;
     margin: 0 12.5%;
   }
-  .section-info-roundnet h2 {
+  .section-info-roundnet h1,
+.section-info-roundnet h2,
+.section-info-roundnet h4 {
     font-size: 4em;
     margin: 25px 0;
   }
@@ -1274,7 +1332,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.what-is-sport h4 {
+.what-is-sport h2 {
   margin: 25px 0;
   font-size: 2.6em;
   text-align: center;
@@ -1283,7 +1341,7 @@ html {
   color: var(--color-blue);
 }
 @media only screen and (min-width: 1200px) {
-  .what-is-sport h4 {
+  .what-is-sport h2 {
     margin: 25px 0;
     font-size: 3em;
     width: auto;
@@ -1372,7 +1430,7 @@ html {
 .image-promotion .first-part-image-promotion {
   top: 0;
 }
-.image-promotion .first-part-image-promotion h2 {
+.image-promotion .first-part-image-promotion h3 {
   margin-top: 50px;
   font-family: "Luckiest Guy", cursive;
   font-size: 2.5em;
@@ -1428,7 +1486,7 @@ html {
     width: 750px;
     height: 700px;
   }
-  .image-promotion .first-part-image-promotion h2 {
+  .image-promotion .first-part-image-promotion h3 {
     font-size: 7.5em;
     text-shadow: 12px 13px 2px #0e0e0e;
   }

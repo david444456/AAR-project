@@ -8,8 +8,8 @@ $font-size-h: 4.5em;
 
     width: 100vw;
 
-    h1{
-        margin: 15px 8px;
+    h3{
+        margin: 15px 0px;
         font-size: 4.2em;
         font-family: "Times New Roman", Times, serif;
         color: var(--color-blue);
@@ -22,8 +22,8 @@ $font-size-h: 4.5em;
         margin: 0 12vw;
         width: 75vw;
 
-        h1{
-            margin: 65px 8px;
+        h3{
+            margin: 19px 0px;
 
             font-size: $font-size-h;
             align-self: flex-start;
@@ -38,7 +38,7 @@ $font-size-h: 4.5em;
 
 .box-vision,
 .box-about-roundnet{
-    h2{
+    h3{
         font-size: 2.8em;
         font-family: "Times New Roman", Times, serif;
         color: var(--color-blue);
@@ -52,7 +52,7 @@ $font-size-h: 4.5em;
     }
 
     @media only screen and (min-width: 1200px) {
-        h2{
+        h3{
             font-size: $font-size-h;    
             margin: 50px 0 0;
         }
@@ -99,7 +99,7 @@ $font-size-h: 4.5em;
 .box-info-us-person-text{
     margin: 0 0 0 15px;
 
-    h3{
+    h4{
         font-size: 1.9em;
         font-family: 'Bebas Neue', cursive;
     }
@@ -108,11 +108,19 @@ $font-size-h: 4.5em;
     }
 
     @media only screen and (min-width: 1200px) {
-        h3{
+        h4{
             font-size: 3.2em;
         }
         h5{
             font-size: 1.3em;
         }
+    }
+}
+
+.image-sponsors h4{
+    margin: 0 0 26px;
+
+    @media only screen and (min-width: 1200px) {
+        margin: 0 0 100px;
     }
 }

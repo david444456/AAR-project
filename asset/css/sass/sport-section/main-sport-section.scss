@@ -25,7 +25,9 @@
     width: 100vw;
     margin: 0 ;
 
-    h2{
+    h1,
+    h2,
+    h4{
         margin: 10px ;
         width: 100vw;
         font-size: 3em;
@@ -49,7 +51,9 @@
         width: 75vw;
         margin: 0 12.5%;
 
-        h2{
+        h1,
+        h2,
+        h4{
             font-size: 4em;
             margin: 25px 0;
         }
@@ -82,7 +86,7 @@
     align-items: center;
     flex-direction: column;
 
-    h4{
+    h2{
         margin: 25px 0;
         font-size: 2.6em;
         text-align: center;
@@ -92,7 +96,7 @@
         color: var(--color-blue);
     }
     @media only screen and (min-width:1200px) {
-        h4{
+        h2{
             margin: 25px 0;
             font-size: 3em;
             width: auto;
@@ -177,7 +181,7 @@
 
         top:0;
 
-        h2{
+        h3{
             margin-top: 50px;
             font-family: 'Luckiest Guy', cursive;
             font-size: 2.5em;
@@ -251,7 +255,7 @@
 
         .first-part-image-promotion{
     
-            h2{
+            h3{
                 font-size: 7.5em;
                 text-shadow: 12px 13px 2px rgb(14, 14, 14);  
             }
