@@ -745,6 +745,7 @@ html {
           flex-direction: column;
   -webkit-box-shadow: 1px 0px 20px 2px;
           box-shadow: 1px 0px 20px 2px;
+  max-width: 100vw;
 }
 @media only screen and (min-width: 500px) {
   .meeting-places {
@@ -1573,12 +1574,114 @@ body {
   position: relative;
   padding-bottom: 2rem;
   min-height: 100vh;
+  padding-bottom: 380px;
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    padding-bottom: 600px;
+  }
 }
 
 footer {
   background-color: rgba(4, 144, 168, 0.6);
   text-align: center;
-  width: 100%;
+  color: white;
+  padding: 1em 0;
   bottom: 0;
+  width: 100%;
   position: absolute;
+}
+
+.box-container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+@media only screen and (min-width: 1200px) {
+  .box-container-footer {
+    width: 40%;
+    margin: 0 30%;
+  }
+}
+
+.information-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.information-footer .image-icon-arr-footer {
+  width: 50%;
+  height: 50%;
+}
+.information-footer .image-icon-arr-footer img {
+  width: 100%;
+  height: 100%;
+}
+.information-footer .links-footer {
+  list-style: none;
+  font-size: 1.4em;
+  color: white;
+  width: 50%;
+}
+.information-footer .links-footer li {
+  margin: 15px 0;
+}
+@media only screen and (min-width: 1200px) {
+  .information-footer .image-icon-arr-footer {
+    width: 350px;
+    height: 350px;
+  }
+  .information-footer .links-footer {
+    font-size: 1.9em;
+    width: 350px;
+  }
+}
+
+.social-media-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.social-media-footer li a:link {
+  font-size: 1.9em;
+}
+.social-media-footer li {
+  list-style: none;
+  margin: 15px;
+}
+.social-media-footer li .fa-instagram,
+.social-media-footer li .fa-facebook,
+.social-media-footer li .fa-whatsapp {
+  color: white;
+}
+@media only screen and (min-width: 1200px) {
+  .social-media-footer li a:link {
+    font-size: 3.5em;
+  }
 }
