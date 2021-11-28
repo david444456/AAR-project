@@ -1373,7 +1373,7 @@ html {
   margin: 10px 5px;
   width: 100%;
   padding-bottom: 56.25%;
-  height: 0;
+  height: 0px;
 }
 @media only screen and (min-width: 1200px) {
   .video-explication-sport {
@@ -1385,6 +1385,8 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0px;
+  left: 0px;
 }
 
 .margin-left-image, .image-promotion a .button-promotion, .image-promotion .first-part-image-promotion {
@@ -1570,6 +1572,226 @@ html {
      object-position: top;
 }
 
+.image-background-header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(246, 252, 245, 0.2)), to(black)), url(/asset/img/BackGroundHeader.jpg);
+  background-image: linear-gradient(to bottom, rgba(246, 252, 245, 0.2), black), url(/asset/img/BackGroundHeader.jpg);
+  /* background-image: url(../img/BackGroundHeader.jpg); */
+  background-position: center;
+  background-attachment: unset;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: -30px;
+}
+.image-background-header-contact h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  text-shadow: 100px solid 2px black;
+}
+@media only screen and (min-width: 1200px) {
+  .image-background-header-contact {
+    height: calc(var(--screen-x) * 9 / 16);
+    min-height: 600px;
+    background-size: 100%;
+    margin-top: 0;
+  }
+  .image-background-header-contact h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 8em;
+  }
+}
+
+.text-more h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 0.26em;
+  margin: 0 10px;
+}
+@media only screen and (min-width: 1200px) {
+  .text-more h2 {
+    font-size: 0.6em;
+  }
+}
+
+.contact-main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-main-section h3 {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3em;
+  margin: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  .contact-main-section {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 100vh;
+  }
+  .contact-main-section h3 {
+    font-size: 8em;
+    margin: 50px;
+  }
+}
+
+.box-contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 99vw;
+  margin: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  .box-contact-section {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    width: 60vw;
+    height: 60%;
+    margin: 40px;
+  }
+}
+
+.info-contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 99%;
+  height: 100%;
+}
+.info-contact-section h4 {
+  font-size: 3em;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  font-family: "Bebas Neue", cursive;
+}
+.info-contact-section p {
+  font-size: 1.6em;
+  font-family: "Bebas Neue", cursive;
+}
+@media only screen and (min-width: 1200px) {
+  .info-contact-section {
+    width: 50%;
+  }
+}
+
+.extend-inputs-contact, .contact-form .component-input-text-comment, .contact-form .component-input-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
+}
+.extend-inputs-contact input, .contact-form .component-input-text-comment input, .contact-form .component-input-text input {
+  width: 50%;
+  height: 50px;
+  border-radius: 20px;
+  border: #63BCE2;
+  background-color: #63BCE2;
+  text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+  .extend-inputs-contact, .contact-form .component-input-text-comment, .contact-form .component-input-text {
+    margin: 25px;
+  }
+  .extend-inputs-contact input, .contact-form .component-input-text-comment input, .contact-form .component-input-text input {
+    width: 300px;
+    height: 75px;
+  }
+}
+
+.contact-form {
+  width: 98%;
+  background-color: #009FA9;
+  border-radius: 24px;
+  -webkit-box-shadow: 7px 6px 4px rgba(77, 77, 77, 0.6);
+          box-shadow: 7px 6px 4px rgba(77, 77, 77, 0.6);
+}
+.contact-form .button-contact {
+  width: 21%;
+  height: 45px;
+  right: 0;
+  margin: 0 0 15px 75%;
+  border-radius: 15px;
+  border: #63BCE2;
+  background-color: #63BCE2;
+}
+.contact-form .component-input-text-comment {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-form .component-input-text-comment input {
+  width: 100%;
+  height: 150px;
+}
+.contact-form p {
+  color: white;
+  font-size: 2em;
+  font-family: "Bebas Neue", cursive;
+}
+@media only screen and (min-width: 1200px) {
+  .contact-form {
+    width: 50%;
+  }
+  .contact-form p {
+    font-size: 3em;
+  }
+}
+
 body {
   position: relative;
   padding-bottom: 2rem;
@@ -1583,7 +1805,7 @@ body {
 }
 
 footer {
-  background-color: rgba(4, 144, 168, 0.6);
+  background-color: #009FA9;
   text-align: center;
   color: white;
   padding: 1em 0;
@@ -1644,6 +1866,10 @@ footer {
 }
 .information-footer .links-footer li {
   margin: 15px 0;
+}
+.information-footer .links-footer li a {
+  text-decoration: none;
+  color: white;
 }
 @media only screen and (min-width: 1200px) {
   .information-footer .image-icon-arr-footer {

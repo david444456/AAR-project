@@ -1,4 +1,7 @@
 $color-whiteblue: rgba(4, 144, 168, 0.6);
+$color-footer: #009FA9;
+$color-input: #63BCE2;
+
 :root{
     --mainly-botton-color: rgba(224, 224, 224, 0.3);
     --mainly-botton-color-hover: rgb(255, 255, 255);
@@ -18,10 +21,13 @@ $color-whiteblue: rgba(4, 144, 168, 0.6);
 
 
 // about us section
-@import "sass/about-us-page/about-us-page.scss";
+@import "sass/other-pages/about-us-page.scss";
 
 // sport  section
 @import "sass/sport-section/main-sport-section.scss";
+
+// contact
+@import "sass/other-pages/contact-section.scss";
 
 body{
     position: relative;
@@ -36,7 +42,7 @@ body{
 
 // general footer
 footer{
-    background-color: rgba(4, 144, 168, 0.6);
+    background-color: $color-footer;
     text-align: center;
     color: white;
 
@@ -90,6 +96,11 @@ footer{
         li{
             
             margin: 15px 0;
+        }
+
+        li a{
+            text-decoration: none;
+            color: white;
         }
     }
 

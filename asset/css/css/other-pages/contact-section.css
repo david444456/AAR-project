@@ -1,0 +1,41 @@
+.image-background-header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(246, 252, 245, 0.01)), to(rgba(255, 255, 255, 0))), url(../img/allaar.avif);
+  background-image: linear-gradient(to bottom, rgba(246, 252, 245, 0.01), rgba(255, 255, 255, 0)), url(../img/allaar.avif);
+  /* background-image: url(../img/BackGroundHeader.jpg); */
+  background-position: center;
+  background-attachment: unset;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: -30px;
+}
+.image-background-header-contact h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+  .image-background-header-contact {
+    height: calc(var(--screen-x) * 9 / 16);
+    min-height: 600px;
+    background-size: 100%;
+    margin-top: 0;
+  }
+  .image-background-header-contact h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 6em;
+  }
+}

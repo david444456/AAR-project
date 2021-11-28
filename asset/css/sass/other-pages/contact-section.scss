@@ -1,0 +1,202 @@
+//background
+.image-background-header-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: linear-gradient(to bottom, rgba(246, 252, 245, 0.2),
+     rgb(0, 0, 0)), url(/asset/img/BackGroundHeader.jpg);
+    /* background-image: url(../img/BackGroundHeader.jpg); */
+    //
+    background-position: center;
+    background-attachment: unset;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    margin-top: -30px;
+
+    h1{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3em;
+        color: white;
+        text-align: center;
+        text-shadow: 100px solid 2px black ;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        height: calc(var(--screen-x) * 9 / 16);
+        min-height: 600px;
+
+        background-size: 100%;
+
+        margin-top: 0;
+
+        h1{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 8em;
+        }
+    }
+}
+
+.text-more{
+    h2{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 0.26em;
+        margin: 0 10px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        h2{
+            font-size: 0.6em;
+        }
+    }
+}
+
+// contact section
+
+.contact-main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+
+    h3{
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        font-size:  3em;
+        margin: 10px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        height: 100vh;
+
+        h3{
+            font-size:  8em;
+            margin: 50px;
+        }
+    }
+}
+
+.box-contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+
+    width: 99vw;
+
+    margin: 10px;
+
+    @media only screen and (min-width: 1200px) {
+        flex-direction: initial;
+
+        width: 60vw;
+        height: 60%;
+        margin: 40px;
+    }
+}
+
+.info-contact-section{
+    display: flex;
+    align-items: flex-start ;
+    flex-direction: column;
+
+    width: 99%;
+    height: 100%;
+
+    h4{
+        font-size: 3em;
+        align-self: start;
+        font-family: 'Bebas Neue', cursive;
+    }
+    p{
+        font-size: 1.6em;
+
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 50%;
+    }
+}
+
+.extend-inputs-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    margin: 15px;
+    input{
+
+        width: 50%;
+        height: 50px;
+        
+        border-radius: 20px;
+        border: $color-input;
+        background-color: $color-input;
+        text-align: center;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        margin: 25px;
+        input{
+            width: 300px;
+            height: 75px;
+        }
+    }
+}
+
+.contact-form{
+    width: 98%;
+    background-color: $color-footer;
+    border-radius: 24px;
+
+    box-shadow: 7px 6px 4px rgba(77, 77, 77, 0.6);
+
+    .button-contact{
+        width: 21%;
+        height: 45px;
+
+        right: 0;
+
+        margin:  0 0 15px 75%;
+
+        border-radius: 15px;
+        border: $color-input;
+        background-color: $color-input;
+    }
+
+    .component-input-text{
+        @extend .extend-inputs-contact;
+    }
+
+    .component-input-text-comment{
+        @extend .extend-inputs-contact;
+        align-items: flex-start;
+        flex-direction: column;
+
+        input{
+            width: 100%;
+            height: 150px;
+        }
+    }
+
+    p{
+        color: white;
+        font-size: 2em;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 50%;
+        p{
+            font-size: 3em;
+        }
+    }
+}
