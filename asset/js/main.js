@@ -1,13 +1,13 @@
-const root = document.documentElement;
+const menuDivResp = document.querySelector(".box-button-header-responsive");
+const menuNav = document.querySelector(".section-menu-menu nav");
 
 eventListeners();
 
 function eventListeners() {
-    window.addEventListener('resize', changeValueOfScreen);
+    console.log("x2");
+    menuDivResp.onclick = function(){
+        console.log("change");
+        menuNav.classList.toggle("desactive");
+    }
 }
 
-function changeValueOfScreen(){
-    const value = window.screen.availWidth + "px";
-    root.style.setProperty("--screen-x", value);
-    console.log(window.screen.width + " " + root.style.getPropertyValue("--screen-x"));
-}

@@ -272,14 +272,15 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 99vw;
   min-height: 5px;
+  background-color: white;
 }
 @media only screen and (min-width: 1200px) {
   .section-menu {
@@ -297,8 +298,44 @@ html {
   height: 100px;
 }
 
+.box-button-header-responsive {
+  display: block;
+  font-size: 2em;
+  color: rgba(4, 144, 168, 0.6);
+  margin-right: 20px;
+}
+@media only screen and (min-width: 800px) {
+  .box-button-header-responsive {
+    display: none;
+  }
+}
+
+.desactive {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  .desactive {
+    display: block;
+  }
+}
+
 .section-menu-menu {
   width: 60%;
+  position: relative;
+}
+.section-menu-menu nav {
+  position: absolute;
+}
+@media only screen and (min-width: 800px) {
+  .section-menu-menu {
+    width: 60%;
+  }
+  .section-menu-menu nav {
+    position: relative;
+  }
+  .section-menu-menu .box-button-header-responsive {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .section-menu-menu {
@@ -307,11 +344,11 @@ html {
 }
 
 .menu {
-  width: 70%;
+  width: 70vw;
   height: 10%;
   padding-left: 0;
   list-style: none;
-  margin-top: 5px;
+  margin-top: 50px;
   margin-right: 5px;
   margin-bottom: 0;
   border-radius: 15px 15px 15px 15px;
@@ -325,7 +362,22 @@ html {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background: var(--mainly-botton-color);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: var(--mainly-botton-color-hover);
+}
+@media only screen and (min-width: 800px) {
+  .menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 70%;
+    margin-top: 5px;
+    background: var(--mainly-botton-color);
+  }
 }
 
 .menu li {
@@ -335,7 +387,7 @@ html {
   text-align: center;
 }
 .menu li a {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 @media only screen and (min-width: 1200px) {
   .menu li a {
@@ -557,7 +609,7 @@ html {
   }
 }
 .last-events-screen {
-  width: 100%;
+  width: 98%;
   margin: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -580,7 +632,7 @@ html {
 }
 
 .last-events {
-  width: 95vw;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1615,14 +1667,15 @@ html {
   }
 }
 
-.text-more h2 {
+.text-more-contact h2 {
   font-family: "Bebas Neue", cursive;
-  font-size: 0.26em;
+  font-size: 3em;
   margin: 0 10px;
+  color: white;
 }
 @media only screen and (min-width: 1200px) {
-  .text-more h2 {
-    font-size: 0.6em;
+  .text-more-contact h2 {
+    font-size: 5em;
   }
 }
 
@@ -1712,6 +1765,16 @@ html {
 .info-contact-section p {
   font-size: 1.6em;
   font-family: "Bebas Neue", cursive;
+}
+.info-contact-section .social-media-contact-section {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+.info-contact-section .social-media-contact-section li .fa-instagram,
+.info-contact-section .social-media-contact-section li .fa-facebook,
+.info-contact-section .social-media-contact-section li .fa-whatsapp {
+  color: #009FA9 !important;
 }
 @media only screen and (min-width: 1200px) {
   .info-contact-section {

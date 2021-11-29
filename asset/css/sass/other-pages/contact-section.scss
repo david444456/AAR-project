@@ -39,16 +39,17 @@
     }
 }
 
-.text-more{
+.text-more-contact{
     h2{
         font-family: 'Bebas Neue', cursive;
-        font-size: 0.26em;
+        font-size: 3em;
         margin: 0 10px;
+        color: white;
     }
 
     @media only screen and (min-width: 1200px) {
         h2{
-            font-size: 0.6em;
+            font-size: 5em;
         }
     }
 }
@@ -60,8 +61,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    
 
     h3{
         text-align: center;
@@ -118,6 +117,17 @@
         font-size: 1.6em;
 
         font-family: 'Bebas Neue', cursive;
+    }
+
+    .social-media-contact-section{
+        justify-content: flex-start !important;
+        li{
+            .fa-instagram,
+            .fa-facebook,
+            .fa-whatsapp{
+                color: $color-footer !important;
+            }
+        }
     }
 
     @media only screen and (min-width: 1200px) {
