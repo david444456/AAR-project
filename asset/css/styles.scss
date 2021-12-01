@@ -29,6 +29,9 @@ $color-input: #63BCE2;
 // contact
 @import "sass/other-pages/contact-section.scss";
 
+// gallery
+@import "sass/other-pages/gallery.scss";
+
 body{
     position: relative;
     padding-bottom: 2rem;
@@ -123,6 +126,9 @@ footer{
     align-items: center;
 
     width: 100%;
+    
+
+    
     li a:link{
         
         font-size: 1.9em;
@@ -131,10 +137,20 @@ footer{
         list-style: none;
         margin: 15px;
 
+        transition: 0.9s;
+
         .fa-instagram,
         .fa-facebook,
         .fa-whatsapp{
             color: white;
+        }
+    }
+
+    li:hover{
+        .fa-instagram,
+        .fa-facebook,
+        .fa-whatsapp{
+            transform: scale(1.09);
         }
     }
 

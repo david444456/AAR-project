@@ -1869,6 +1869,126 @@ html {
   }
 }
 
+.image-roundnet-photos {
+  margin: 50px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (min-width: 1270px) {
+  .image-roundnet-photos {
+    margin: 150px 0;
+  }
+}
+
+.container-roundnet {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: auto;
+  border-radius: 0;
+  border: 0px solid #1d1d1d;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+@media only screen and (min-width: 1270px) {
+  .container-roundnet {
+    width: 1250px;
+    height: 1200px;
+    border-radius: 50%;
+    border: 25px solid #1d1d1d;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background-color: black;
+  }
+}
+
+.image-border-roundnet-1,
+.image-border-roundnet-2 {
+  position: absolute;
+  display: none;
+  border-radius: 8px;
+  width: 1500px;
+  height: 150px;
+  background-color: #b3761c;
+}
+@media only screen and (min-width: 1270px) {
+  .image-border-roundnet-1,
+.image-border-roundnet-2 {
+    display: inline;
+    left: 10;
+  }
+}
+
+.image-border-roundnet-1 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.image-border-roundnet-2 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.container-roundnet .card-roundnet-image {
+  position: relative;
+  overflow: none;
+  -webkit-transform: rotate(0deg) scale(1);
+          transform: rotate(0deg) scale(1);
+  -webkit-clip-path: none;
+          clip-path: none;
+}
+@media only screen and (min-width: 1270px) {
+  .container-roundnet .card-roundnet-image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    -webkit-transform: rotate(-45deg) scale(1.4);
+            transform: rotate(-45deg) scale(1.4);
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+}
+
+.container-roundnet .card-roundnet-image img {
+  width: 320px;
+  height: 150px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+@media only screen and (min-width: 1270px) {
+  .container-roundnet .card-roundnet-image img {
+    width: 540px;
+    height: 300px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+
+.container-roundnet .card-roundnet-image:hover img {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
 body {
   position: relative;
   padding-bottom: 2rem;
@@ -1977,11 +2097,19 @@ footer {
 .social-media-footer li {
   list-style: none;
   margin: 15px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
 }
 .social-media-footer li .fa-instagram,
 .social-media-footer li .fa-facebook,
 .social-media-footer li .fa-whatsapp {
   color: white;
+}
+.social-media-footer li:hover .fa-instagram,
+.social-media-footer li:hover .fa-facebook,
+.social-media-footer li:hover .fa-whatsapp {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
 }
 @media only screen and (min-width: 1200px) {
   .social-media-footer li a:link {

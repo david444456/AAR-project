@@ -1,0 +1,101 @@
+.image-roundnet-photos{
+    margin: 50px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (min-width: 1270px) {
+        margin: 150px 0;
+    }
+}
+
+
+.container-roundnet{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: auto;
+
+    border-radius: 0;
+    border: 0px solid rgb(29, 29, 29);
+    overflow: hidden;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    transform: rotate(0deg);
+
+    @media only screen and (min-width: 1270px) {
+        width: 1250px;
+        height: 1200px;
+        border-radius: 50%;
+        border: 25px solid rgb(29, 29, 29);
+        transform: rotate(45deg);
+        background-color: black;
+    }
+}
+
+.image-border-roundnet-1,
+.image-border-roundnet-2{
+    position: absolute;
+    display: none;
+
+    border-radius: 8px;
+
+    width: 1500px;
+    height: 150px;
+    background-color: rgb(179, 118, 28);
+    
+    @media only screen and (min-width: 1270px) {
+        
+        display: inline;
+        left: 10;
+    }
+}
+
+.image-border-roundnet-1{
+    transform: rotate(-45deg) ;
+}
+
+.image-border-roundnet-2{
+    transform: rotate(45deg) ;
+
+}
+
+.container-roundnet .card-roundnet-image{
+    position: relative;
+    // width: 150px;
+    // height: 150px;
+    overflow: none;
+    transform: rotate(0deg) scale(1.0); 
+    clip-path: none; 
+
+    @media only screen and (min-width: 1270px) {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        transform: rotate(-45deg) scale(1.4); 
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); 
+    }
+}
+
+.container-roundnet .card-roundnet-image img{
+    width: 320px;
+    height: 150px;
+    transition: 0.5s;
+
+    @media only screen and (min-width: 1270px) {
+        width: 540px;
+        height: 300px;
+        transition: 0.5s;
+    }
+}
+
+.container-roundnet .card-roundnet-image:hover img{
+    transform: scale(1.02);
+
+}
