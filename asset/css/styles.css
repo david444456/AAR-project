@@ -1317,14 +1317,14 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
+  width: 99vw;
   margin: 0;
 }
 .section-info-roundnet h1,
 .section-info-roundnet h2,
 .section-info-roundnet h4 {
   margin: 10px;
-  width: 100vw;
+  width: 100%;
   font-size: 3em;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
@@ -1476,11 +1476,11 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
 }
 .image-promotion img {
-  width: 100%;
+  width: 99%;
   height: 100%;
 }
 .image-promotion .image-promotion-img {
@@ -1570,7 +1570,7 @@ html {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  width: 99%;
   margin: 0 0 35px;
 }
 .where-we-play img {
@@ -1582,6 +1582,7 @@ html {
 @media only screen and (min-width: 1200px) {
   .where-we-play {
     margin: 80px 0;
+    width: 98%;
   }
   .where-we-play .display-none-mobile {
     display: block;
@@ -1602,7 +1603,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 98%;
 }
 .box-where-play a {
   -ms-flex-item-align: start;
@@ -1616,6 +1617,11 @@ html {
 }
 .box-where-play p {
   width: 100%;
+}
+.box-where-play h4 {
+  font-size: 4em;
+  width: 100%;
+  margin: 0 0;
 }
 @media only screen and (min-width: 1200px) {
   .box-where-play {
