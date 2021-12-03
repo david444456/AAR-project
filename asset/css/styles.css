@@ -1903,6 +1903,7 @@ html {
           align-items: center;
   width: 100vw;
   height: auto;
+  padding-bottom: 100px;
   border-radius: 0;
   border: 0px solid #1d1d1d;
   overflow: hidden;
@@ -1912,6 +1913,7 @@ html {
 }
 @media only screen and (min-width: 1270px) {
   .container-roundnet {
+    padding-bottom: 0px;
     width: 1250px;
     height: 1200px;
     border-radius: 50%;
@@ -1956,9 +1958,23 @@ html {
           transform: rotate(0deg) scale(1);
   -webkit-clip-path: none;
           clip-path: none;
+  -webkit-box-shadow: 2px 2px 5px #009FA9;
+          box-shadow: 2px 2px 5px #009FA9;
+}
+@media only screen and (min-width: 500px) {
+  .container-roundnet .card-roundnet-image {
+    margin: 15px 0;
+  }
+}
+@media only screen and (min-width: 930px) {
+  .container-roundnet .card-roundnet-image {
+    margin: 0;
+  }
 }
 @media only screen and (min-width: 1270px) {
   .container-roundnet .card-roundnet-image {
+    -webkit-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
     width: 300px;
     height: 300px;
     overflow: hidden;
@@ -1970,13 +1986,28 @@ html {
 }
 
 .container-roundnet .card-roundnet-image img {
-  width: 320px;
-  height: 150px;
+  width: 90vw;
+  height: 24vh;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border-radius: 15px;
+  margin: 15px;
+}
+@media only screen and (min-width: 500px) {
+  .container-roundnet .card-roundnet-image img {
+    width: 60vw;
+  }
+}
+@media only screen and (min-width: 930px) {
+  .container-roundnet .card-roundnet-image img {
+    width: 40vw;
+    height: 24vh;
+  }
 }
 @media only screen and (min-width: 1270px) {
   .container-roundnet .card-roundnet-image img {
+    border-radius: 0px;
+    margin: 0px;
     width: 540px;
     height: 300px;
     -webkit-transition: 0.5s;

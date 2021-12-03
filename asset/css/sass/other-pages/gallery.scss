@@ -1,3 +1,5 @@
+
+
 .image-roundnet-photos{
     margin: 50px 0;
     position: relative;
@@ -21,6 +23,8 @@
     width: 100vw;
     height: auto;
 
+    padding-bottom: 100px;
+
     border-radius: 0;
     border: 0px solid rgb(29, 29, 29);
     overflow: hidden;
@@ -30,6 +34,7 @@
     transform: rotate(0deg);
 
     @media only screen and (min-width: 1270px) {
+        padding-bottom: 0px;
         width: 1250px;
         height: 1200px;
         border-radius: 50%;
@@ -74,7 +79,18 @@
     transform: rotate(0deg) scale(1.0); 
     clip-path: none; 
 
+    box-shadow: 2px 2px 5px $color-footer;
+
+    @media only screen and (min-width: 500px) {
+        margin: 15px 0;
+    }
+
+    @media only screen and (min-width: 930px) {
+        margin: 0;
+    }
+
     @media only screen and (min-width: 1270px) {
+        box-shadow: 0 0 0;
         width: 300px;
         height: 300px;
         overflow: hidden;
@@ -84,11 +100,26 @@
 }
 
 .container-roundnet .card-roundnet-image img{
-    width: 320px;
-    height: 150px;
+    width: 90vw;
+    height: 24vh;
     transition: 0.5s;
 
+    border-radius: 15px;
+
+    margin: 15px;
+
+    @media only screen and (min-width: 500px) {
+        width: 60vw;
+    }
+
+    @media only screen and (min-width: 930px) {
+        width: 40vw;
+        height: 24vh;
+    }
+
     @media only screen and (min-width: 1270px) {
+        border-radius: 0px;
+        margin: 0px;
         width: 540px;
         height: 300px;
         transition: 0.5s;
