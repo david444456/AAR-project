@@ -2020,7 +2020,7 @@ html {
           transform: scale(1.02);
 }
 
-#lightBoxBg {
+.lightBoxBg {
   position: fixed;
   top: 0;
   display: none;
@@ -2031,7 +2031,7 @@ html {
   height: 100%;
 }
 
-#lightBoxBg.active {
+.lightBoxBg.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2043,7 +2043,7 @@ html {
           align-items: center;
 }
 
-#lightBoxImg {
+.lightBoxImg {
   max-width: 80%;
   max-height: 80%;
   border-radius: 15px;
